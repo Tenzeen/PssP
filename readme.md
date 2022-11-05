@@ -4,10 +4,15 @@ Ran into an error when trying to access localhost/patients after running my flas
 (Background on this error at: https://sqlalche.me/e/14/e3q8)))
 
 I took the following steps to attempt to resolve this error:
+
     - Made sure that bind address was set to 0.0.0.0 and port was set to 3306 in the mysqld.cnf file
+    
     - Made sure that my GCP mysql instance connections settings was set to 0.0.0.0/0
+    
     - Made sure my firewall settings were set up correctly (screenshot_3)
+    
     - Ran a test in my terrminal to see if I could connect to my mysql IP address. (screenshot_2)
+    
         - The connection was successful
 
 I am able to use mysql workbench and connect to my mysql database, but the flask app won't work.
