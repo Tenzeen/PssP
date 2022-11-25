@@ -19,7 +19,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://' + mysql_username + ':' + mysql_password + '@' + mysql_host + ':3306/patients'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'sefwfgesg'
-
+print('mysql+pymysql://' + mysql_username + ':' + mysql_password + '@' + mysql_host + ':3306/patients')
 db.init_app(app)
 
 

@@ -11,10 +11,15 @@ I took the following steps to attempt to resolve this error:
     
     - Made sure my firewall settings were set up correctly (screenshot_3)
     
-    - Ran a test in my terrminal to see if I could connect to my mysql IP address. (screenshot_2)
+    - Ran a test in my terminal to see if I could connect to my mysql IP address. (screenshot_2)
     
         - The connection was successful
 
 I am able to use mysql workbench and connect to my mysql database, but the flask app won't work.
 
 Also, I was unable to access my website using 0.0.0.0 in the url. I used localhost instead. 
+
+
+# Update!
+## Errors have been resolved!
+.env file contained syntax errors
