@@ -21,7 +21,7 @@ The four components found in this repository are:
 
 - **`images` (Folder)**
   - This folder houses image files picturing the following:
-    - The `/patients` list page with dummy data and the three newly added fields
-    - The `/view` page of a single patient with the three newly added fields
-    - The modal window for editing a patient's details with the three newly added fields available for editing and updating
-    - The modal window for adding a new patient with the three newly added fields available for editing and updating
+    - The `/patients` list page with dummy data and the three newly added fields.
+    - The `/view` page of a single patient with the three newly added fields.
+    - The modal window for editing a patient's details with the three newly added fields available for editing and updating.
+    - The modal window for adding a new patient with the three newly added fields available for editing and updating.
