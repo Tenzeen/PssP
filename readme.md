@@ -1,25 +1,27 @@
-Ran into an error when trying to access localhost/patients after running my flask app. Screenshot_1 in the error folder is a picture of the error message I recieved. 
+# Patient Self Service Portal - Admin View
 
-(sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, 'Can\'t connect to MySQL server on \'("104.155.136.209")\' ([Errno 11001] getaddrinfo failed)')
-(Background on this error at: https://sqlalche.me/e/14/e3q8)))
+### Description
 
-I took the following steps to attempt to resolve this error:
+In this repository, our patient self-service portal becomes more fleshed out with the addition of tangible tables, dummy data, and adding/editing/updating/deleting features. Using our given source code as a base, we ensure that our data is connected to the app properly by adjusting table connections and endpoint parameters in `app.py`. To ensure that our information is displayed correctly, we focus mainly on `patient_all.html` and `patient_details.html`.
 
-    - Made sure that bind address was set to 0.0.0.0 and port was set to 3306 in the mysqld.cnf file
-    
-    - Made sure that my GCP mysql instance connections settings was set to 0.0.0.0/0
-    
-    - Made sure my firewall settings were set up correctly (screenshot_3)
-    
-    - Ran a test in my terminal to see if I could connect to my mysql IP address. (screenshot_2)
-    
-        - The connection was successful
+Specifically, from the source code, we have adapted three new fields for patients: Sex, Birthdate, and Zip Code, based on `gender`, `dob`, and `zip_code` fields from our original `patient_portal.patients` table. These fields are added uniformly across the patient master list, the individual patient info views, as well as where relevant when adding and updating patient information.
 
-I am able to use mysql workbench and connect to my mysql database, but the flask app won't work.
+### Components
 
-Also, I was unable to access my website using 0.0.0.0 in the url. I used localhost instead. 
+The four components found in this repository are:
 
+- **`app.py` (Python Script)**
+  - Our Python script for launching and maintaining our app.
 
-# Update!
-## Errors have been resolved!
-.env file contained syntax errors
+- **`templates` (Folder)**
+  - This folder houses our HTML files.
+
+- **`static` (Folder)**
+  - This folder houses our CSS files.
+
+- **`images` (Folder)**
+  - This folder houses image files picturing the following:
+    - The `/patients` list page with dummy data and the three newly added fields
+    - The `/view` page of a single patient with the three newly added fields
+    - The modal window for editing a patient's details with the three newly added fields available for editing and updating
+    - The modal window for adding a new patient with the three newly added fields available for editing and updating
